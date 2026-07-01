@@ -3,24 +3,21 @@
 <!-- Device : Redmi Note 7 Pro (violet) -->
 <manifest>
     <!-- fetching sources -->
+    <remote name="ax-devices" fetch="https://github.com/AxionAOSP-devices" revision="lineage-23.2" />
     <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
-    <remote name="iamzeus14" fetch="https://github.com/iamzeus14" revision="lineage-23.2" />
+    <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
-    <remote name="TheMuppets" fetch="https://github.com/TheMuppets" revision="lineage-23.2" />
 
     <!-- Device -->
-    <project remote="iamzeus14" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
-
-    <project remote="iamzeus14" name="android_device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" revision="lineage-23.2" />
+    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
-    <project remote="lineage" name="android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150" revision="lineage-23.2" />
+    <project remote="CosmicCoreX" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" />
 
     <!-- Vendor -->
-    <project remote="TheMuppets" name="proprietary_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
 
-    <project remote="TheMuppets" name="proprietary_vendor_xiaomi_sm6150-common" path="vendor/xiaomi/6150" revision="lineage-23.2" />
-  
     <!-- Hardware -->
-    <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-23.2" />
+    <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" />
+    <project remote="joker" name="android_hardware_dolby" path="hardware/dolby" revision="16.2" />
 </manifest>
