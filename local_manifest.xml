@@ -7,12 +7,13 @@
     <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
     <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
+    <remote name="selfmusing" fetch="https://github.com/selfmusing" revision="lineage-23.2" />
 
     <!-- Device -->
     <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
-    <project remote="CosmicCoreX" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" />
+    <project remote="selfmusing" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="sixteen" />
 
     <!-- Vendor -->
     <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
