@@ -50,6 +50,9 @@ function clean() {
   rm -rf .repo/local_manifests
   rm -rf {device,kernel,hardware,vendor}/xiaomi
   rm -rf hardware/dolby
+  rm -rf vendor/xiaomi/6150
+  rm -rf kernel/xiaomi/sm6150
+  rm -rf device/xiaomi/sm6150-common
   rm -rf vendor/lineage-priv/keys
 }
 
